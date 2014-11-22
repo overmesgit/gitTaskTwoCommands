@@ -1,0 +1,5 @@
+#remove dir
+git filter-branch --tree-filter 'rm -rf frontik/testing' HEAD
+
+#only dir
+git filter-branch --subdirectory-filter frontik/testing -- --all
